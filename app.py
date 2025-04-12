@@ -52,7 +52,7 @@ class ChatbotApp:
     def setup_cors(self):
         CORS(self.app, resources={
             r"/*": {
-                "origins": ["http://localhost:5173"],
+                "origins": "*",
                 "methods": ["GET", "POST", "OPTIONS"],
                 "allow_headers": ["Content-Type", "Authorization"]
             }
